@@ -261,6 +261,15 @@ p{
 .receipes-type{
  display: flex;
  justify-content: flex-end;
+ align-items: center;
  margin: 20px 20px;
 border-radius: 20px;
+}
+tab{
+    display: flex;
+    justify-content: center;
+}
+
+.receipes-type img{
+    border-radius: 10px 10px 10px 10px;
 }
