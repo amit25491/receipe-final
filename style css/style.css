@@ -54,6 +54,7 @@ header a{
 }
 .navBar li a:hover{
     color:rgb(57, 9, 168) ;
+    font-size: 110%;
 }
 
 
@@ -67,6 +68,19 @@ input{
     }
 
 @media screen and (max-width:700px) {
+    
+    header{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+    }
+    .navBar{
+        display: flex;
+        flex-direction: column;
+        padding: 20px;
+    }
+    
+    
     .container{
         background-color: skyblue;
         text-decoration: none;
@@ -84,10 +98,9 @@ input{
 }
 .photo-gallery{
   display: flex;
-  justify-content: flex-start;
+  justify-content: center;
   flex-direction: column;
-    justify-items: center;
-    
+  flex-wrap: wrap;    
 }
 
 .receipes-type{
@@ -160,9 +173,7 @@ h1::before{
 
 .top-content{
     display: flex;
-    
-    justify-content: center;
-
+   justify-content: center;
 }
 
 h3{
@@ -192,23 +203,24 @@ label:hover{
 }
 
 .photo-gallery{
-    width:90%;
-    margin: auto;
-    display: grid;
-    grid-template-columns: repeat(4,1fr);
-    grid-gap: 40px;
-    
-    
+   display: flex;
+   flex-wrap: wrap;
+   padding: 30px;
+   width: 300;
+   height: auto;
 }
 .pic{
-    position: relative;
-    height: 200px;
-    border-radius: 10px;
-    box-shadow: 3px 3px 5px none;
-    cursor: pointer;
-    color: darkblue;
+
+    border-radius: 4px 4px 4px 4px;
+    width: 300px;
+    height: 300px;
+     text-align: center;
+     color:darkblue; 
+     padding: 20px;
     
-    }
+
+}
+
    
 .pic img{
     width: 100%;
@@ -218,7 +230,7 @@ label:hover{
 }
 
 .pic:hover img{
-transform: scale(1.1);
+transform: scale(1.03);
 }
 
 p{
